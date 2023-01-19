@@ -1,5 +1,5 @@
 import getRandomInt from './utils';
-import Fighter from './Fighter';
+import Fighter, { SimpleFighter } from './Fighter';
 import Elf from './Races/Elf';
 import Race from './Races';
 import Archetype, { Mage } from './Archetypes';
@@ -73,7 +73,7 @@ export default class Character implements Fighter {
     return newLifePoints;
   }
 
-  attack(enemy: Fighter): void {
+  attack(enemy: SimpleFighter | Fighter): void {
     enemy.receiveDamage(this._strength);
   }
 
@@ -94,7 +94,7 @@ export default class Character implements Fighter {
     }
   }
 
-  special(enemy: Fighter): void {
+  special(enemy: Fighter | SimpleFighter): void {
     const damage = this._strength + this._dexterity;
     enemy.receiveDamage(damage);
   }

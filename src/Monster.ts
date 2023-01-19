@@ -1,10 +1,10 @@
 import { SimpleFighter } from './Fighter';
 
 export default class Monster implements SimpleFighter {
-  constructor(
-    private _lifePoints: number,
-    private _strength: number,
-  ) {
+  private _lifePoints: number;
+  private _strength: number;
+
+  constructor() {
     this._lifePoints = 85;
     this._strength = 63;
   }
@@ -21,10 +21,8 @@ export default class Monster implements SimpleFighter {
     const newLifePoints = this._lifePoints - attackPoints;
     if (newLifePoints <= 0) {
       this._lifePoints = -1;
-    } else {
-      this._lifePoints = newLifePoints;
     }
-
+    this._lifePoints = newLifePoints;
     return this._lifePoints;
   }
 
