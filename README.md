@@ -13,7 +13,14 @@ Este projeto simula um jogo de RPG com diferentes personagens, raças, classes e
   ```
     cd project-dungeons-and-dragons/ 
     npm install
+   ```
+* Se preferir rodar com Docker:
+
+  ```
+    cd project-dungeons-and-dragons/
     docker-compose-up -d
+    docker exec -it trybers_and_dragons bash
+    npm install
    ```
    
 ## Executando Testes
