@@ -1,17 +1,16 @@
-# Projeto Dungeons and Dragons
+# Projeto Trybers and Dragons
 
 # Sobre
-Este projeto simula um jogo de RPG com diferentes personagens, raças, classes e batalhas, tudo implementado usando TypeScript
+Este projeto foi realizado durante o curso de Desenvolvimento Web (módulo de back-end) da Trybe. É uma simulação de um jogo de RPG com diferentes personagens, raças, classes e batalhas, tudo implementado usando TypeScript.
 
 ## Técnologias usadas
 
 > TypeScript
 
-
 ## Instalando Dependências
 
   ```
-    cd project-dungeons-and-dragons/ 
+    cd project-trybers-and-dragons/ 
     npm install
    ```
 * Se preferir rodar com Docker:
